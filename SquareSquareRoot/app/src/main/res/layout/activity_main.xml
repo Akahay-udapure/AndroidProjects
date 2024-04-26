@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:background="#7ED1DC"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculator"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the number"
+            android:padding="10dp"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:background="#DCB6C2"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="100dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNo"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:text="Square"
+            android:backgroundTint="#092D88"
+            app:cornerRadius="0dp"
+            app:strokeColor="#20EA28"
+            app:strokeWidth="1dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/squareRoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNo"
+            android:layout_toRightOf="@id/square"
+            android:layout_marginTop="30dp"
+            app:cornerRadius="0dp"
+            app:strokeColor="#20EA28"
+            android:backgroundTint="#092D88"
+            app:strokeWidth="1dp"
+            android:text="Squareoot" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Output"
+            android:id="@+id/output"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_below="@id/squareRoot"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+
+    </RelativeLayout>
+</layout>

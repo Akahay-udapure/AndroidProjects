@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Day4</string>
+    <string name="fullName">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="password">Password</string>
+</resources>

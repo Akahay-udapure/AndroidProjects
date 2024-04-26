@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#030303"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/appImg"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/app" />
+
+    <EditText
+        android:id="@+id/loginUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appImg"
+        android:drawableStart="@drawable/user"
+        android:hint="User Name"
+        android:textColorHint="#FFFFFF"
+        android:textColor="@color/white"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/urbanist_medium"
+        android:layout_marginStart="20dp"
+        android:padding="20dp"
+        android:drawablePadding="20dp"/>
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginUsername"
+        android:drawableStart="@drawable/lock"
+        android:hint="Password"
+        android:textColorHint="#FFFFFF"
+        android:textColor="@color/white"
+        android:layout_marginEnd="20dp"
+        android:padding="20dp"
+        android:fontFamily="@font/urbanist_medium"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:drawablePadding="20dp"
+        android:drawableEnd="@drawable/eye"/>
+    <TextView
+        android:id="@+id/recoverAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recover Account"
+        android:fontFamily="@font/urbanist_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginPassword"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:fontFamily="@font/urbanist_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginPassword"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginEnd="20dp"
+        />
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EA0A2A"
+        android:text="Login"
+        android:fontFamily="@font/urbanist_bold"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/forgotPassword"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:padding="15dp"
+        />
+
+    <TextView
+        android:id="@+id/dontHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:fontFamily="@font/urbanist_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginBtn"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginLeft="60dp"
+        />
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:fontFamily="@font/urbanist_extrabold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginBtn"
+        app:layout_constraintStart_toEndOf="@id/dontHaveAccount"
+        android:textColor="#00A09B"
+        android:textSize="20sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
